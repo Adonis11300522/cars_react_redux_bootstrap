@@ -1,0 +1,24 @@
+.me-auto {
+  margin: auto;
+}
+
+.me-auto .nav-link {
+  width: 225px;
+  line-height: 3;
+  font-weight: bold;
+}
+
+.me-auto .nav-link.active {
+  box-shadow: inset 0 -5px 0 -1px #c33364;
+}
+
+.Change-logo {
+  border: 0;
+  background: none;
+}
+
+.navbar-expand-lg {
+  border-bottom: 1px solid lightgray;
+  padding: 0px !important;
+  height: 66px;
+}

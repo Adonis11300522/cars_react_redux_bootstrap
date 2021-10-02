@@ -1,0 +1,29 @@
+.footer {
+    background: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    height: 66px;    
+    align-items: center;
+}
+
+.footer .footer-inner .footer-btn {
+    width: 25%;
+    height: 40px;
+    background: #c33364;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.footer .footer-inner .total-price span {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}

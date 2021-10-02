@@ -1,0 +1,41 @@
+.main-container .car-detail .selected-car img{
+    width: 100%;
+    transform: scale(1.2);
+}
+
+.main-container .car-detail .selected-car{
+    height: calc(100vh - 132px);
+    overflow: hidden;
+}
+
+.col-md-4 {
+    border-left: 1px solid lightgray;
+}
+
+.setting {
+    padding: 20px;
+    height: calc(100vh - 66px - 66px);
+    overflow-y: auto;
+}
+
+.setting .select-option {
+    text-align: left;
+}
+
+.setting .select-option h3,
+.setting .select-option .delivery {
+    text-align: center;
+}
+.setting .select-option .delivery {
+    margin: 20px 0;
+}
+
+.setting .select-option ul{
+    list-style: none;
+}
+
+.setting .select-option ul li {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.2;
+}
