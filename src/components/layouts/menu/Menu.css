@@ -2,10 +2,16 @@
   margin: auto;
 }
 
-.me-auto .nav-link {
+.me-auto .nav-link  {
   width: 225px;
   line-height: 3;
   font-weight: bold;
+  text-align: center;
+}
+
+.me-auto .nav-link a {
+  text-decoration-line: inherit;
+  color: #c33364;
 }
 
 .me-auto .nav-link.active {

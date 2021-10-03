@@ -4,12 +4,30 @@ import { BrowserRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import App from './App' ;
 
+// _________________________________________
+
+import { Provider } from 'react-redux' ;
+import { createStore , applyMiddleware , compose } from 'redux' ;
+import thunk  from 'redux-thunk' ;
+
+import rootReducer from './reducers/root' ;
+
+const store = createStore(
+  // carReducer , 
+  // exteriorReducer ,
+  rootReducer ,
+  compose(
+    applyMiddleware(thunk),
+  )
+)
+
+// ____________________________________________
 ReactDOM.render(
-  <BrowserRouter>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </BrowserRouter> ,
+  <Provider store={store}>
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
+  </Provider> ,
   document.getElementById('root')
 );
 

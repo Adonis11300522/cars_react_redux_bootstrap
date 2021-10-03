@@ -12,7 +12,7 @@ function App() {
     <>
       <Layout>
         <Switch>
-          <Route exact path="/cars" component={Cars} />
+          <Route exact path="/cars" component={Cars}  />
           <Route path="/exterio" component={Exterio} />
           <Route path="/summary" component={Summary} />
           <Redirect from="/" to="/cars" />
