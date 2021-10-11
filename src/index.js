@@ -7,10 +7,14 @@ import App from './App' ;
 // _________________________________________
 
 import { Provider } from 'react-redux' ;
+import {createBrowserHistory} from 'history' ;
+
 import { createStore , applyMiddleware , compose } from 'redux' ;
 import thunk  from 'redux-thunk' ;
 
-import rootReducer from './reducers/root' ;
+import rootReducer from './redux/root' ;
+
+const history = createBrowserHistory();
 
 const store = createStore(
   // carReducer , 
@@ -24,7 +28,7 @@ const store = createStore(
 // ____________________________________________
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter>
+    <BrowserRouter history={history}>
         <App />
     </BrowserRouter>
   </Provider> ,
